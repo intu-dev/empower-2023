@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='fireworks.css') }}">
+  <title>VAR - Well done!</title>
+</head>
+
+<body>
+  <div id="heading" class="green-glow">
+    <pre>
+           _...----.._
+        ,:':::::.     `>.
+      ,' |:::::;'     |:::.
+     /    `'::'       :::::\
+    /         _____     `::;\
+   :         /:::::\      `  :
+   | ,.     /:::::::\        |
+   |;:::.   `::::::;'        |
+   ::::::     `::;'      ,.  ;
+    \:::'              ,::::/
+     \                 \:::/
+      `.     ,:.        :;'
+        `-.::::::..  _.''
+           ```----'''
+      </pre>
+    <pre>
+        __      __         _____    
+        \ \    / / /\     |  __ \   
+         \ \  / / /  \    | |__) |  
+          \ \/ / / /\ \   |  _  /   
+           \  / / ____ \ _| | \ \ _ 
+            \(_)_/    \_(_)_|  \_(_)
+      </pre>
+  </div>
+  <div id="subheader">
+    <div class="green">By Commercial Intuition Ltd.</div>
+    <div class="green">System Status: <span class="green-glow">NORMAL</span></div>
+  </div>
+  <div id="content">
+    <p><span class="green-glow">Congratulations</span> {{ team_name }}!</p>
+    <p>You found the passwords and corrected the code to get the VAR working normally again.</p>
+    <p>Your time: <span class="green">{{ '%d' % minutes }} minutes, {{ '%d' % seconds }} seconds</span>.</p>
+    <p>Now try to score a <span class="green-glow">goal</span>!</p>
+  </div>
+  <div class="firework-container">
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+  </div>
+</body>
+
+</html>

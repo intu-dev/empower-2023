@@ -1,0 +1,140 @@
+body {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    color: #cccccc;
+    background: #0f0f23;
+    font-size: 14pt;
+}
+
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+#heading {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2em;
+    align-items: center;
+    font-size: smaller;
+}
+
+#subheader {
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -60px;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5em;
+}
+
+#content {
+    max-width: 800px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4em;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.green {
+    color: #00cc00;
+}
+
+.green-glow {
+    color: #00cc00;
+    text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+}
+
+.red-glow {
+    color: #cc0000;
+    text-shadow: 0 0 2px #cc0000, 0 0 5px #cc0000;
+}
+
+.input {
+    margin: 0.5em 0;
+    width: 300px;
+    padding: 15px 20px;
+    border: 2px solid #00cc00;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+    font-size: larger;
+    color: #00cc00;
+    background-color: #0f0f23;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.submit {
+    width: 120px;
+    padding: 15px;
+    border: 2px solid #00cc00;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+    font-size: larger;
+    background-color: #00cc00;
+}
+
+.submit:hover {
+    background-color: #99ff99;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#code-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2em;
+    font-size: larger;
+}
+
+#code-block {
+    background-color: #060610;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em 1em 0 1em;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.code-submit {
+    margin: 0.5em;
+    text-align: center;
+}
+
+.code-variable {
+    color:#00cc00;
+    text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+}
+
+.code-func {
+    color: rgb(27, 201, 236);
+}
+
+.code-keyword {
+    color: #cc00b4;
+}
+
+.code-comment {
+    color: #080;
+}
+
+.code-input {
+    border: none;
+    background-color: #060610;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    color: #cccccc;
+    font-size: 14pt;
+}
+
+.code-input:focus {
+    border: none;
+    outline: none;
+}
