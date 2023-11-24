@@ -4,13 +4,13 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 
 # Set the secret key to some random bytes. Keep this really secret!
-app.secret_key = b''
+app.secret_key = b'REPLACE_THIS'
 
-hints = {1: 'I always forget this, so I made a note nearby',
-         2: 'My favourite football team were founded this year',
-         3: 'Look for the red letters!'}
+hints = {1: 'I always forget this, so I wrote it on a post-it note nearby',
+         2: 'The password is the year Lauren\'s favourite football team were founded',
+         3: 'Look for the green letters!'}
 
-passwords = {1: '9752', 2: '1878', 3: 'python', 5: 'true'}
+passwords = {1: '9724', 2: '1878', 3: 'pyth0n', 5: 'true'}
 
 
 @app.route('/', methods=['GET', 'POST'])
