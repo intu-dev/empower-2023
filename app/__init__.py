@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.secret_key = b'REPLACE_THIS'
 
 hints = {1: 'I always forget this, so I wrote it on a post-it note nearby',
-         2: 'The password is the year Lauren\'s favourite football team were founded',
+         2: 'The password is the year Mickey\'s favourite football team were founded',
          3: 'Look for the green letters!'}
 
 passwords = {1: '9724', 2: '1878', 3: 'pyth0n', 5: 'true'}
